@@ -1,5 +1,9 @@
 # NYC-taxi_for_2014-2019
 
+## Description
+
+This project evaluates my ability to execute a mini project. The key tasks involve designing a star schema, setting up containers with terraform, transferring data with Azure Data Factory and creating notebooks in Databricks. The goal to ingest data into a medallion architecture (bronze, silver and gold containers), manipulate it through staging schema enforcement and create fact and dimensional tables for reporting in PowerBI.
+
 ## Files 
 
 ### Database Models 
@@ -64,6 +68,10 @@ The final notebook where fact and dimensional tables are created:
 #### Geojson File 
 
 This file, provided through Databricks workspace, is crucial for processing longitude and latitude coordinates into integers. This aids in pinpointing locations on the map and obtaining location names for each allocated ID. 
+
+## My Experience
+
+I faced a couple of challenges during the project. The main hurdle was extracting the data from the original JSON file where it had multiple arrays and seperate data and meta roots. Also, loading the 2014 data to the Azure silver container took more than 2 hours without any job processing in Databricks. As a way to go about the long loading time of the data was that I had to leave the 2014 data and just work with the 2019 from the Silver container onwards. For the JSON file, I received a different version containing the same location_id and coordinates list. When it also came to loading the data via Azure database connection with Power BI the fact table will load till the last few rows and will stop loading. I was able to obtain the data through the catalog explorer.
 
 ## Overall Task
 1. Review the conceptual, logical, and physical database models for an understanding of the project structure. 
