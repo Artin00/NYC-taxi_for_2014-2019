@@ -13,7 +13,7 @@ spark.conf.set("fs.azure.account.key.datacohortworkspacelabs.dfs.core.windows.ne
 
 # COMMAND ----------
 
-silver_fac = spark.read.load("abfss://silver-artin@datacohortworkspacelabs.dfs.core.windows.net/DataSet", format = "delta")
+silver_fac = spark.read.load("abfss://silver-artin@datacohortworkspacelabs.dfs.core.windows.net/2019", format = "delta")
 silver_fac.show()
 
 silver_fact = silver_fac
