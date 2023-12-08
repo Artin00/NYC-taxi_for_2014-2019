@@ -23,7 +23,7 @@ This project evaluates my ability to execute a mini project. The key tasks invol
 
 ### Notebooks 
 
-#### Bronze Notebook (Bronze_Completed_NYC.py) 
+#### Bronze Notebook (Bronze_completed_NYC.py) 
 
 This notebook has the following steps:
 
@@ -38,7 +38,7 @@ This notebook has the following steps:
 5. Saves the DataFrame in Delta format, partitioned by `vector_id`. 
 
 
-#### Silver Notebook (Silver_Completed_NYC.py) 
+#### Silver Notebook (Silver_completed_NYC.py) 
 
 This notebook focuses on schema cleanup and column reordering: 
 
@@ -76,9 +76,9 @@ I faced a couple of challenges during the project. The main hurdle was extractin
 ## Overall Task
 1. Review the conceptual, logical, and physical database models for an understanding of the project structure. 
 
-2. Execute the Bronze Notebook (`Bronze_Completed_NYC.py`) to stage and clean the data. 
+2. Execute the Bronze Notebook (`Bronze_completed_NYC.py`) to stage and clean the data. 
 
-3. Proceed with the Silver Notebook (`Silver_Completed_NYC.py`) for schema cleanup and reordering. 
+3. Proceed with the Silver Notebook (`Silver_completed_NYC.py`) for schema cleanup and reordering. 
 
 4. Use the Gold Notebook (`Gold_Completed_NYC.py`) for the creation of fact and dimensional tables. 
 
