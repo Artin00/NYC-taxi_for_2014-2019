@@ -9,8 +9,7 @@ dbutils.library.restartPython()
 
 #Running a code to access the data 
 
-spark.conf.set("fs.azure.account.key.datacohortworkspacelabs.dfs.core.windows.net","NUwhjFcHG95EU1Rnu7+Woq3JQP28bXy5kDQhA9yFV68XBz1umr7uqeQgMhrwxHfTwNWxAx/n1K6j+AStGTUMkQ==")
-
+spark.conf.set("fs.azure.account.key.<name_of_repository>.dfs.core.windows.net","<password_for_key>")
 # COMMAND ----------
 
 silver_fac = spark.read.load("abfss://silver-artin@datacohortworkspacelabs.dfs.core.windows.net/2019", format = "delta")
